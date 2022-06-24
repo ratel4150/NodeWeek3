@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100hw;
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: space-around;
+            
+            
+
+        }
+        form{
+            
+            
+            height: 80%;
+            width: 40%;
+            
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+        }
+        form *{
+            display: block;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/user/sign-in" method="post">
+        <h2>sign-in</h2>
+        <p>{¡User already exist!}</p>
+        <label for="">Name: </label>
+        <input type="text" name="name" id="name" placeholder="name....">
+        <label for="">Email: </label>
+        <input type="email" name="email" id="email" placeholder=" email....">
+        <label for="">Password: </label>
+        <input type="password" name="password" id="password" placeholder="password....">
+        <button type="submit">Send Data</button>
+    </form>
+    
+</body>
+</html>
